@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="веб дизайнер">
+        <title>webclever</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="http://za.e/images/favicon.ico?v=2" />
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="css/main_med_340.css">
+        <link rel="stylesheet" href="css/main_med_768.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <script src="/picturefill-master/src/external/matchmedia.js"></script>
+        <script src="/picturefill-master/dist/picturefill.js"></script>
+        <script src="/Respond-master.js"></script>
+        <script src="../dest/respond.src.js"></script>
+        <script type="text/javascript">
+            function AjaxFormRequest(result_id,form_id,url) {
+            //проверка заполненности обязательных полей - можно удалить
+            var yourlinks = $("#"+form_id+" [yourbest='true']"); var yourdostup = '';
+            for(var i_yourlinks=0; i_yourlinks<yourlinks.length; i_yourlinks++) {
+            if ($(yourlinks[i_yourlinks]).val().length == 0) {
+            $(yourlinks[i_yourlinks]).css("border","1px solid red");
+            yourdostup = "off"; }
+            else $(yourlinks[i_yourlinks]).css("border","1px solid green"); } if (yourdostup == "off" || !$("div").hasClass("blavtors")) return false;
+            //end проверка заполненности обязательных полей
+            jQuery.ajax({
+            url:      url,    //Адрес подгружаемой страницы
+            type:     "POST", //Тип запроса
+            dataType: "html", //Тип данных
+            data: jQuery("#"+form_id).serialize(),
+            success: function(response) { //Если все нормально
+            document.getElementById(result_id).innerHTML = response;  //ответ формы берется с обработчика php, например: echo 'Сообщение успешно отправлено!';
+            $("#"+result_id).show('medium', function() {setTimeout(function() {$("#"+result_id).hide('slow');}, 2000);});},
+            error: function(response)   { //Если ошибка
+            document.getElementById(result_id).innerHTML = "Ошибка при отправке формы";
+            $("#"+result_id).show('medium', function() {setTimeout(function() {$("#"+result_id).hide('slow');}, 2000);});}});
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+<!-- header -->
+            <div class="row">
+                <div class="cols col-header">
+                    <div class="cols col-logo">
+                        <figure>
+                            <img sizes="(min-width: 10em) 80vw, 100vw"
+                                srcset="images/logo_50.png 375w,
+                                        images/logo_100.png 480w,
+                                        images/logo_100.png 768w"
+                                alt="сайт">
+                        </figure>
+                    </div>
+                    <div class="cols col-6">
+                        <div class="name">
+                            <h2>webclever.com</h2>
+                        </div>
+                    </div>
+                    <div class="cols col-world">
+                        <figure>
+                            <img sizes="(min-width: 10em) 80vw, 100vw"
+                                srcset="images/world_50.jpg 375w,
+                                        images/world_50.jpg 480w,
+                                        images/world_100.jpg 768w"
+                                alt="проект">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+<!-- navigation -->
+            <div class="row">
+                <div class="cols col-12">
+                    <nav>
+                        <div class="as">
+                            <a href="http://za.e/index.html ">Главня</a>
+                        </div>
+                        <div class="as">
+                            <a href="http://za.e/my_works.html ">Мои роботи</a>
+                        </div>
+                        <div class="as">
+                            <a href="http://za.e/about_me.html ">Обо мне</a>
+                        </div>
+                        <div class="as">
+                            <a href="http://za.e/contacts.html ">Контакти</a>
+                        </div>
+                    </nav>
+                </div>
+            </div> 
+            <div class="row">
+                <div class="to_introduce">
+                  <h2>портфолио</h1>
+                  <h1>Ефичука Олега</h1>
+                </div>
+            </div> 
+            <div class="row">
+                            <figure>
+                                <img sizes="(min-width: 10em) 80vw, 100vw"
+                                    srcset="images/shadow_26.png 375w,
+                                            images/shadow_57.png 480w,
+                                            images/shadow_100.png 768w"
+                                    alt="тень">
+                            </figure>
+            </div> 
+            <div class="row">
+                 <div class="block_info">
+                 <!-- <div class="glavnaya"> -->
+                    <h2>Занимаюсь созданием дизайна сайтов, версткой и интеграцией в CMS</h2>
+                </div>
+            </div>
+<!-- connect tel massage-->
+            <div class="row">
+                <div class="cols col-block_connect">
+                    <div class="cols col-rowconnect">
+                        <!-- <img src="images/img2/1.png" alt="1">  -->
+                        <div class="cols col-imgconnect">
+                            <figure>
+                                <img sizes="(min-width: 10em) 80vw, 100vw"
+                                    srcset="images/connect_tel_40.png 375w,
+                                            images/connect_tel_50.png 480w,
+                                            images/connect_tel_50.png 768w"
+                                    alt="портфолио">
+                            </figure>                   
+                        </div>
+                        <div class="cols col-text_connect">
+                            tel: 0953376881  
+                        </div>
+                    </div>
+                    <div class="cols col-rowconnect">
+                        <div class="cols col-imgconnect">
+                            <figure>
+                                <img sizes="(min-width: 10em) 80vw, 100vw"
+                                    srcset="images/connect_face_40.png 375w,
+                                            images/connect_face_50.png 480w,
+                                            images/connect_face_50.png 768w"
+                                    alt="портфолио">
+                            </figure>                   
+                        </div>
+                        <div class="cols col-text_connect">
+                            tel: 0953376881  
+                        </div>
+                    </div>
+                    <div class="cols col-rowconnect">
+                        <div class="cols col-imgconnect">
+                            <figure>
+                                <img sizes="(min-width: 10em) 80vw, 100vw"
+                                    srcset="images/connect_mail_40.png 375w,
+                                            images/connect_mail_50.png 480w,
+                                            images/connect_mail_50.png 768w"
+                                    alt="портфолио">
+                            </figure>                   
+                        </div>
+                        <div class="cols col-text_connect">
+                            5tg6yy@gmail.com  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!--  -->
+        <!--  -->
+
+            <div class="row">
+              <div class="forma_connect">
+                <div class="yourajaxforma1">
+                  <form method="post" id="FORM_ID">
+                        <div class="yourajaxforma2"><input type="text" name="yourname" placeholder="Ваше имя" yourbest="true" /></div>
+                        <div class="yourajaxforma2"><input type="text" name="yourphone" placeholder="Номер телефона" yourbest="true" /></div>
+                        <div class="yourajaxforma3"><textarea name="yourmsg" placeholder="Текст сообщения"></textarea></div>
+                        <div class="yourajaxforma5" id="OTVET_FORMI" style="display: none;"><!--Ответ формы--></div>
+                        <div class="yourajaxforma4"><input type="button" value="Отправить" onclick="AjaxFormRequest('OTVET_FORMI', 'FORM_ID', './form.php')" /></div>
+                        <div style="text-align: right;" class="blavtors"><a target="_blank" style="text-decoration:none; color: #c0c0c0; font-family: arial,helvetica,sans-serif;  font-size: 7px; " title="Программирование на html, JavaScript, Jquery" href="http://blogprogram.ru/">webclever.com</a></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+<!-- footer -->
+            <div class="row">
+                <div class="cols col-12">
+                    <div class="footer">
+                            2016
+                    </div>                        
+                </div>
+            </div>  
+        </div>
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    </body>
+</html>
